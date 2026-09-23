@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: sudheer_nginx
+  name: sudheer-nginx
 spec:
   containers:
   - name: nginx
