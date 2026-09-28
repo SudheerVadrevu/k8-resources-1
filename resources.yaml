@@ -1,0 +1,17 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: resourceslu
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+    # below ones are soft limits
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+    # below ones are hard limit. hard limits cpu, memory values should be equal to or greater than softlimits
+      limits:
+        memory: "64Mi"
+        cpu: "500m"
