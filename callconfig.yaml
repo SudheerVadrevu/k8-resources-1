@@ -6,9 +6,12 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    env:
-    - name: sougandh
-      valueFrom:
-        configMapKeyRef:
-          name: mapu         # The ConfigMap this value comes from.
-          key: sundar
+    # env:
+    # - name: sougandh
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: mapu         # The ConfigMap this value comes from.
+    #       key: sundar
+    envFrom:
+        - configMapRef:
+            name: mapu
