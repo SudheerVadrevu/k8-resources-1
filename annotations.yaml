@@ -5,6 +5,7 @@ metadata:
  annotations:
   github.url: https://github.com/SudheerVadrevu/k8-resources-1.git
   # mostly annotations we use for special characters and getting external resources
-containers:
-- name: nginx
-  image: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
