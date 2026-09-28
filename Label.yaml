@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labelu
+  labels:
+    sudheer: "good_boy"
+    vineela: "bad_girl"
+containers:
+  - name: nginx
+    image: nginx
+    
