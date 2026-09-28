@@ -5,6 +5,7 @@ metadata:
   labels:
     sudheer: "good_boy"
     vineela: "bad_girl"
-containers:
-- name: nginx
-  image: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
