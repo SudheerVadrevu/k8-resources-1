@@ -1,0 +1,14 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: realconfig
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    env:
+    - name: sougandh
+      valueFrom:
+        configMapKeyRef:
+          name: sougandh         # The ConfigMap this value comes from.
+          key: sundar

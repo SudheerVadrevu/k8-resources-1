@@ -1,0 +1,8 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+ name: mapu
+data:
+  # property-like keys; each key maps to a simple value
+  sundar: "Sweeper in Google Office"
+  pranavi: "sodhi_moham_dana"
