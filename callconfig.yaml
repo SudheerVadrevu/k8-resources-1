@@ -10,5 +10,5 @@ spec:
     - name: sougandh
       valueFrom:
         configMapKeyRef:
-          name: sougandh         # The ConfigMap this value comes from.
+          name: mapu         # The ConfigMap this value comes from.
           key: sundar
