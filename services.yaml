@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sudheerservice
+spec:
+  selector:
+    course: "devOps"
+    instructor: "sivaramgoud"
+    environment: "dev"
+    name: "services"
+  ports:
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: 80 # target port means pod port
+      #type: ikkada type emi ivakapothey adhe cluster IP service ane
